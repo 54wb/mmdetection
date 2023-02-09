@@ -30,5 +30,6 @@ data = dict(
         ann_file = data_root+'annotations/instances_val.json'
     )
 )
+evaluation = dict(metric=['bbox', 'segm'])
 
 optimizer = dict(lr=0.005)
