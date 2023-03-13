@@ -37,7 +37,7 @@ def main():
         #将mask放入图像中
         frame_color_gray = frame_gray + frame_mask
         frame_color_gray = frame_color_gray.transpose(1,2,0)
-
+        
         video_write.write(frame_color_gray)
     video_write.release()
     cv2.destroyAllWindows()
