@@ -7,3 +7,8 @@ model = dict(
     roi_head=dict(
         bbox_head=dict(num_classes=10),
         mask_head=dict(num_classes=10)))
+optimizer = dict(lr=0.0025)
+lr_config = dict(
+    warmup_iters=50
+)
+log_config = dict(interval=25)
